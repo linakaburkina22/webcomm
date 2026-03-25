@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 Paddock Couture</title>
+  <meta name="description" content="Editorial website about Formula 1 fashion and visual identity.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Paddock Couture</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="driversDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Drivers
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="driversDropdown">
+            <li><a class="dropdown-item" href="#drivers">Drivers overview</a></li>
+            <li><a class="dropdown-item" href="#leclerc-profile">Charles Leclerc</a></li>
+            <li><a class="dropdown-item" href="#hamilton-profile">Lewis Hamilton</a></li>
+            <li><a class="dropdown-item" href="#verstappen-profile">Max Verstappen</a></li>
+            <li><a class="dropdown-item" href="#sainz-profile">Carlos Sainz</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#teams">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trends">Trends</a></li>
+        <li class="nav-item"><a class="nav-link" href="#editorials">Editorials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button id="themeToggle" class="btn btn-outline-light btn-sm px-3" type="button">Change theme</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero d-flex align-items-center justify-content-center text-center">
+  <div class="hero-overlay"></div>
+  <div class="hero-content position-relative container">
+    <p class="eyebrow">Raceweek Fashion Editorial</p>
+    <h1 class="display-2 fw-bold hero-title">Formula 1 Paddock Couture</h1>
+    <p class="lead hero-lead hero-copy">Where motorsport meets luxury fashion, visual identity, and cultural storytelling</p>
+    <a href="#intro" class="btn btn-light btn-lg mt-3 hero-btn">Explore the editorial</a>
+  </div>
+</header>
+
+<main>
+  <section id="intro" class="intro-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 text-center">
+          <h2 class="section-title mb-4">The Paddock as a Runway</h2>
+          <p class="intro-text">
+            Formula 1 Paddock Couture explores the intersection of speed and style. In contemporary Formula 1, the paddock is no longer only a place of competition: it also functions as a visual stage where branding, personal identity, and fashion performance work together.
+          </p>
+          <p class="intro-text">
+            Drivers have become more than athletes. They are now ambassadors, cultural figures, and style references whose clothing choices communicate confidence, values, and status. Through images, typography, layout, and interactive design, this project presents Formula 1 as an editorial universe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="drivers" class="py-5 container">
+    <div class="section-heading text-center mb-4">
+      <p class="section-kicker">Paddock icons</p>
+      <h2 class="section-title">Paddock Icons</h2>
+    </div>
+
+    <div id="driversCarousel" class="carousel slide editorial-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#driversCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Charles Leclerc"></button>
+        <button type="button" data-bs-target="#driversCarousel" data-bs-slide-to="1" aria-label="Lewis Hamilton"></button>
+        <button type="button" data-bs-target="#driversCarousel" data-bs-slide-to="2" aria-label="Max Verstappen"></button>
+        <button type="button" data-bs-target="#driversCarousel" data-bs-slide-to="3" aria-label="Carlos Sainz"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <article class="carousel-item active">
+          <div class="carousel-card row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img src="img/charles.jpg" class="driver-img img-fluid" alt="Charles Leclerc">
+            </div>
+            <div class="col-lg-7">
+              <p class="driver-label">Ferrari</p>
+              <h3 class="display-6">Charles Leclerc</h3>
+              <p class="lead">Understated chic and quiet luxury</p>
+              <p>Leclerc's image is built on restraint: neutral palettes, elegant cuts, and a polished sense of control that mirrors Ferrari's premium heritage.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="carousel-item">
+          <div class="carousel-card row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img src="img/lewis.JPG" class="driver-img img-fluid" alt="Lewis Hamilton">
+            </div>
+            <div class="col-lg-7">
+              <p class="driver-label">Mercedes</p>
+              <h3 class="display-6">Lewis Hamilton</h3>
+              <p class="lead">Haute street couture and fearless experimentation</p>
+              <p>Hamilton turns arrival moments into runway moments, combining luxury fashion, streetwear, bold silhouettes, and personal activism.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="carousel-item">
+          <div class="carousel-card row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img src="img/max.JPG" class="driver-img max-img img-fluid" alt="Max Verstappen">
+            </div>
+            <div class="col-lg-7">
+              <p class="driver-label">Red Bull Racing</p>
+              <h3 class="display-6">Max Verstappen</h3>
+              <p class="lead">Performance minimalism and functional cool</p>
+              <p>Verstappen projects efficiency rather than spectacle. His style language is rooted in clean lines, technical simplicity, and performance-first confidence.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="carousel-item">
+          <div class="carousel-card row align-items-center g-4">
+            <div class="col-lg-5 text-center">
+              <img src="img/carlos.JPG" class="driver-img img-fluid" alt="Carlos Sainz">
+            </div>
+            <div class="col-lg-7">
+              <p class="driver-label">Williams</p>
+              <h3 class="display-6">Carlos Sainz</h3>
+              <p class="lead">Refined tailoring and classic masculinity</p>
+              <p>Sainz often communicates elegance through fitted shapes, timeless menswear references, and a visual identity based on balance and refinement.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#driversCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#driversCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="video-section container py-5">
+    <div class="section-heading text-center mb-4">
+      <p class="section-kicker">Faces of the grid</p>
+      <h2 class="section-title">F1 Drivers 2026</h2>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/Sks_fMr2Yss" title="F1 Drivers 2026" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="profiles" class="profiles-section py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <p class="section-kicker">Paddock portraits</p>
+        <h2 class="section-title">Driver Fashion Profiles</h2>
+      </div>
+
+      <article id="leclerc-profile" class="driver-profile py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <img src="img/charles.png" alt="Charles Leclerc portrait" class="profile-img leclerc-profile-img img-fluid">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="profile-title">Charles Leclerc</h3>
+            <p>Charles Leclerc embodies a quiet luxury aesthetic within Formula 1. His style rarely depends on excess. Instead, it communicates quality through subtle tailoring, clean fits, and calm color palettes.</p>
+            <p>In editorial terms, Leclerc is about balance: softness without weakness, elegance without theatricality, and luxury without obvious display.</p>
+            <p class="keywords"><strong>Style keywords:</strong> refined, tailored, discreet, classic</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="hamilton-profile" class="driver-profile py-4">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-5">
+            <img src="img/lewis.png" alt="Lewis Hamilton portrait" class="profile-img hamilton-profile-img img-fluid">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="profile-title">Lewis Hamilton</h3>
+            <p>Lewis Hamilton treats fashion as self-expression and cultural language. His paddock appearances often combine avant-garde silhouettes, designer pieces, and strong accessories that frame him as both athlete and fashion figure.</p>
+            <p>He brings visibility, experimentation, and narrative power to the paddock, making style part of the event.</p>
+            <p class="keywords"><strong>Style keywords:</strong> bold, expressive, experimental, high-fashion</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="verstappen-profile" class="driver-profile py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <img src="img/max.png" alt="Max Verstappen portrait" class="profile-img verstappen-profile-img img-fluid">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="profile-title">Max Verstappen</h3>
+            <p>Max Verstappen's style is closer to performance design than to fashion spectacle. He communicates through practical, streamlined, low-noise aesthetics that reflect his competitive persona.</p>
+            <p>This makes his visual identity highly contemporary: minimal, functional, and rooted in confidence rather than ornament.</p>
+            <p class="keywords"><strong>Style keywords:</strong> minimal, technical, clean, performance-driven</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="sainz-profile" class="driver-profile py-4">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-5">
+            <img src="img/carlos.png" alt="Carlos Sainz portrait" class="profile-img sainz-profile-img img-fluid">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="profile-title">Carlos Sainz</h3>
+            <p>Carlos Sainz often projects a more traditional masculine elegance. His clothing choices suggest discipline, structure, and Mediterranean sophistication, linking classic menswear codes with modern sports celebrity culture.</p>
+            <p>In the editorial logic of this site, Sainz represents continuity, polish, and understated confidence.</p>
+            <p class="keywords"><strong>Style keywords:</strong> elegant, structured, polished, timeless</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="style-notes-section container py-5">
+    <div class="section-heading text-center mb-4">
+      <p class="section-kicker">Signature codes</p>
+      <h2 class="section-title">Style Notes</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-3"><div class="style-card p-4 h-100 text-center" data-driver="Charles Leclerc"><h3 class="h5">Charles</h3><p>Quiet luxury and elegant restraint</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="style-card p-4 h-100 text-center" data-driver="Lewis Hamilton"><h3 class="h5">Lewis</h3><p>Experimental silhouettes and fearless styling</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="style-card p-4 h-100 text-center" data-driver="Max Verstappen"><h3 class="h5">Max</h3><p>Functional, clean, performance-first image</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="style-card p-4 h-100 text-center" data-driver="Carlos Sainz"><h3 class="h5">Carlos</h3><p>Sharp tailoring and classic menswear energy</p></div></div>
+    </div>
+
+    <div id="styleOutput" class="style-output mt-4 text-center">
+      Click a card to explore the driver's fashion identity
+    </div>
+  </section>
+
+  <section id="teams" class="teams-section py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-4">
+        <p class="section-kicker">Garage aesthetics</p>
+        <h2 class="section-title">Team Aesthetics</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3"><article class="team-card ferrari p-4 h-100"><h3>Ferrari</h3><p>Heritage red, Italian prestige, emotional luxury, and visual drama</p></article></div>
+        <div class="col-md-6 col-xl-3"><article class="team-card mercedes p-4 h-100"><h3>Mercedes</h3><p>Monochrome polish, futuristic minimalism, and premium modernism</p></article></div>
+        <div class="col-md-6 col-xl-3"><article class="team-card redbull p-4 h-100"><h3>Red Bull</h3><p>Dynamic contrast, youth culture, athletic energy, and performance branding</p></article></div>
+        <div class="col-md-6 col-xl-3"><article class="team-card mclaren p-4 h-100"><h3>McLaren</h3><p>Bright identity, modern optimism, engineered cool, and digital-friendly visuals</p></article></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trends" class="py-5 container">
+    <div class="section-heading text-center mb-4">
+      <p class="section-kicker">What the paddock is wearing</p>
+      <h2 class="section-title">Paddock Trends</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4"><article class="trend-card p-4 h-100"><h3>Luxury outerwear</h3><p>Structured coats, leather jackets, and statement layers reshape the paddock silhouette.</p></article></div>
+      <div class="col-md-6 col-xl-4"><article class="trend-card p-4 h-100"><h3>Technical minimalism</h3><p>Technical fabrics and clean cuts connect race culture with modern urban fashion.</p></article></div>
+      <div class="col-md-6 col-xl-4"><article class="trend-card p-4 h-100"><h3>Brand collaborations</h3><p>Fashion labels and motorsport brands increasingly share audiences, values, and visual codes.</p></article></div>
+    </div>
+  </section>
+
+  <section id="editorials" class="editorial-section py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <p class="section-kicker">Inside the paddock narrative</p>
+        <h2 class="section-title">Editorial Perspective</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="editorial-text">Formula 1 now operates across sport, media, luxury branding, and digital culture. This project approaches the paddock as a communication environment where clothes, posture, team colors, and image-making strategies all contribute to meaning.</p>
+          <p class="editorial-text">The site therefore combines editorial writing, responsive layout, interactive cards, a carousel, and typographic hierarchy to transform course concepts into one coherent visual experience.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="quote-box">
+            <p class="quote-text">“The paddock is the new runway — and the driver is both athlete and icon.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 text-center">
+        <div class="section-heading mb-4">
+          <p class="section-kicker">Project focus</p>
+          <h2 class="section-title">About This Project</h2>
+        </div>
+        <p class="about-text">
+          This website was developed as a web design project focused on typography, visual hierarchy, layout, interactivity, and responsive editorial storytelling. It reflects how digital design can present Formula 1 not only as a sport, but also as a platform for fashion communication and luxury branding.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4 text-center">
+  <p class="mb-1">© 2026 Formula 1 Paddock Couture</p>
+  <small class="d-block">Fashion × Motorsport × Web Communication</small>
+  <small class="d-block mt-2 footer-note">External resources used: Bootstrap 5, Google Fonts, YouTube embed</small>
+</footer>
+
+<div id="cookieBanner" class="cookie-banner">
+  <div class="cookie-banner-inner">
+    <span>This website uses cookies to save your theme and preferences</span>
+    <div class="cookie-actions">
+      <button id="acceptCookies" class="btn btn-light btn-sm">Accept</button>
+      <button id="declineCookies" class="btn btn-outline-light btn-sm">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
