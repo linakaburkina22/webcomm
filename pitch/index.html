@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 Paddock Couture — Technical Presentation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/blood.css">
+
+  <style>
+    :root {
+      --bg: #10090b;
+      --text: #f4efea;
+      --muted: rgba(244,239,234,0.72);
+      --accent: #b11f32;
+      --border: rgba(180,28,44,0.40);
+      --panel: rgba(177,31,50,0.12);
+    }
+
+    .reveal {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      font-size: 30px;
+      background:
+        radial-gradient(circle at top left, rgba(177,31,50,0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(177,31,50,0.08), transparent 24%),
+        var(--bg);
+    }
+
+    .reveal .slides {
+      text-align: left;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      font-family: 'DM Serif Display', serif;
+      text-transform: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+      text-shadow: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .reveal h1 {
+      font-size: 2.45rem;
+      line-height: 1.04;
+    }
+
+    .reveal h2 {
+      font-size: 1.8rem;
+      line-height: 1.1;
+    }
+
+    .reveal p,
+    .reveal li {
+      font-size: 0.72em;
+      line-height: 1.68;
+      font-weight: 300;
+      color: var(--text);
+      text-shadow: none;
+    }
+
+    .reveal ul {
+      display: block;
+      margin-left: 1.1em;
+    }
+
+    .reveal li {
+      margin-bottom: 0.3rem;
+    }
+
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.34em !important;
+      color: var(--accent) !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .lede {
+      max-width: 760px;
+      font-size: 0.78em !important;
+      line-height: 1.8 !important;
+      color: var(--text) !important;
+    }
+
+    .box {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, var(--panel), rgba(255,255,255,0.015)),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      box-shadow: 0 16px 34px rgba(0,0,0,0.22);
+      padding: 1.5rem 1.7rem;
+    }
+
+    .cover {
+      min-height: 72vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.6rem;
+      align-items: center;
+    }
+
+    .media-box {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, var(--panel), rgba(255,255,255,0.015)),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      box-shadow: 0 16px 34px rgba(0,0,0,0.22);
+      padding: 1rem;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .media-stack {
+      display: grid;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .media-box img {
+      width: 100%;
+      max-height: 68vh;
+      object-fit: contain;
+      border-radius: 16px;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+      background: rgba(0,0,0,0.18);
+    }
+
+    .reveal .progress {
+      color: var(--accent);
+      height: 5px;
+    }
+
+    .reveal .controls {
+      color: var(--accent);
+    }
+
+    .reveal .slide-number {
+      font-size: 16px;
+      color: #fff;
+      background: rgba(177,31,50,0.40);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    @media (max-width: 900px) {
+      .reveal { font-size: 24px; }
+      .two-col { grid-template-columns: 1fr; }
+      .media-box { min-height: 220px; }
+      .box { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section>
+      <div class="box cover">
+        <p class="kicker">Technical Presentation</p>
+        <h1>Formula 1 Paddock Couture</h1>
+        <p class="lede">A web communication project that presents Formula 1 as a fashion-oriented editorial platform through branding, image, and identity.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <p class="kicker">01</p>
+        <h2>Project Idea</h2>
+        <p>This project presents Formula 1 not only as a sport, but also as a visual and cultural environment shaped by style, branding, and personal identity.</p>
+        <p>The goal was to combine editorial aesthetics with web communication techniques studied during the course.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <p class="kicker">02</p>
+        <h2>Technologies and Design</h2>
+        <ul>
+          <li>HTML5 and semantic sections</li>
+          <li>CSS3 with custom editorial styling</li>
+          <li>Bootstrap 5 for responsive layout and carousel</li>
+          <li>JavaScript for interaction and cookies</li>
+          <li>DM Serif Display and Montserrat for visual hierarchy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div class="media-box">
+          <div class="media-stack">
+            <img src="img/hero.png" alt="Homepage screenshot">
+            <img src="img/nav.png" alt="Navigation screenshot">
+          </div>
+        </div>
+        <div class="box">
+          <p class="kicker">03</p>
+          <h2>Interface and Navigation</h2>
+          <p>These screenshots show the homepage hero section and the navigation menu. The visual design uses a strong editorial hierarchy, while the dropdown navigation improves access to the driver sections.</p>
+          <p>The interface combines a dramatic visual tone with a clear reading structure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div class="media-box">
+          <img src="img/html-structure.png" alt="HTML structure screenshot">
+        </div>
+        <div class="box">
+          <p class="kicker">04</p>
+          <h2>HTML Structure</h2>
+          <p>This code shows the semantic organisation of the page with separate sections such as intro and drivers.</p>
+          <p>It demonstrates a clear one-page structure and readable markup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div class="media-box">
+          <img src="img/bootstrap-carousel.png" alt="Bootstrap carousel screenshot">
+        </div>
+        <div class="box">
+          <p class="kicker">05</p>
+          <h2>Bootstrap Carousel</h2>
+          <p>The project uses Bootstrap 5 to build a responsive carousel for the drivers section.</p>
+          <p>Custom CSS gives it a more editorial look and helps integrate it into the overall visual identity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div class="media-box">
+          <img src="img/html-profiles.png" alt="Profiles section screenshot">
+        </div>
+        <div class="box">
+          <p class="kicker">06</p>
+          <h2>Profiles and Content Hierarchy</h2>
+          <p>This part of the code shows how the driver profiles are structured with separate articles, images, and text blocks.</p>
+          <p>It supports stronger hierarchy and a magazine-inspired reading flow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="two-col">
+        <div class="media-box">
+          <img src="img/cookies-html.png" alt="Cookies html screenshot">
+        </div>
+        <div class="box">
+          <p class="kicker">07</p>
+          <h2>Cookies</h2>
+          <p>The site includes a cookie banner that stores user preference after acceptance.</p>
+          <p>This directly applies a key topic of the course in a real interface and shows how the project uses JavaScript beyond static layout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <p class="kicker">08</p>
+        <h2>Lessons Learnt</h2>
+        <p>This project helped develop skills in semantic HTML, custom CSS, Bootstrap, JavaScript, cookies, and visual hierarchy.</p>
+        <p>It also showed how design choices can influence the communication value of a website.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <p class="kicker">09</p>
+        <h2>Long-Term Plans</h2>
+        <p>The project can be expanded with more screenshots, additional content, and further refinement of the visual identity.</p>
+        <p>It could also become part of a wider personal web portfolio.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box cover">
+        <p class="kicker">End</p>
+        <h2>Thank you</h2>
+        <p class="lede">Formula 1 Paddock Couture</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  transition: "slide",
+  controls: true,
+  progress: true,
+  center: true,
+  slideNumber: true
+});
+</script>
+</body>
+</html>
